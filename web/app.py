@@ -45,7 +45,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/', methods=['POST'])
+@app.route('/upload', methods=['POST'])
 def upload():
     aqui = teste()
     return render_template('index.html', text=str(aqui))
@@ -53,5 +53,5 @@ def upload():
 
 
 
-if __name__ == "__main__":
-    app.run(debug = True)
+if __name__ == '__main__':
+    app.run(debug=True)
