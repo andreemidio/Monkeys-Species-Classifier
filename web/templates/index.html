@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <title>Apes Kind Classifier</title>
+  <title>Monkeys Species Classifier</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -11,14 +11,14 @@
 
   <div class="shadow bg bg-info row text-center p-0 m-0 justify-content-md-center">
     <div style="margin-top: 100px !important;" class="col-6 text-light mt-5">
-      <h1 class="text-left ml-5" style="font-size: 440p !important;" >Apes Kind Classifier</h1>
+      <h1 class="text-left ml-5" style="font-size: 440p !important;" >Monkeys Species Classifier</h1>
       <h5 class="text-left ml-5"><a class="text-light" href="https://lejoaoconte.github.io/" target="_blank">By: João Pedro C. Sobrinho</a></h5>
     </div>  
     <img style="margin-top:-20px" class="col-2 p-0 " src="/static/topo.png" >
   </div>
 
   <div class="container mt-5">
-    <h3 class="text-center">A simple application of neural network to classify 10 types of apes kind.</h3>
+    <h3 class="text-center">A simple application of neural network to classify 10 types of monkeys species.</h3>
       <div class="text-center">
         <button type="button" class="w-25 text-light btn btn-info btn-lg mt-3 mb-3" data-toggle="modal" data-target="#enviar">
           Do it!
@@ -26,7 +26,11 @@
       </div>
       
       {% if text %}
-        <h1>The ape is {{ text }}</h1>
+        <hr>
+        <div class="text-center">
+          <h1 class="mt-5">The monkey is:</h1><br> 
+          <h1 class="mb-5 text-info">{{ text }}</h1>
+        </div>
       {% endif %}
       
     <hr>
@@ -100,10 +104,12 @@
           </button>
         </div>
         <div class="modal-body">
-          <form enctype="multipart/form-data" action="/upload" method="post">
-            <input type="file" name="imagem" id="imagem">
+          <form class="form-group" enctype="multipart/form-data" action="/upload" method="post">
+            <input class="form-control-file" type="file" name="imagem" id="imagem">
             <br>
-            <button type="submit">Enviar</button>
+            <div class="text-center">
+              <button class="btn btn-info w-25" type="submit">Enviar</button>
+            </div>
           </form>
         </div>
       </div>

@@ -48,7 +48,19 @@ def index():
 @app.route('/upload', methods=['POST'])
 def upload():
     aqui = teste()
-    return render_template('index.html', text=str(aqui))
+
+    macacos = [ 'mantled howler',
+                'patas monkey',
+                'bald uakari',
+                'japanese macaque',
+                'pygmy marmoset',
+                'white headed capuchin',
+                'silvery marmoset',
+                'common squirrel monkey',
+                'black headed night monkey',
+                'nilgiri langur']
+    
+    return render_template('index.html', text=str(macacos[aqui].upper()))
 
 
 
