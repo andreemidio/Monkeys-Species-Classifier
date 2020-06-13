@@ -10,7 +10,18 @@ A acurácia e a perda podem ser vistos nas imagens abaixo. A <b> acurácia final
 
 Foi desenvolvido um site para rodar o sistema como pode ser visto na imagem inicial do README.
 
-Todo modelo e peso está disponível github.
+Todo modelo e peso está disponível github. Foram usadas as seguintes bibliotecas:
+
+* gunicorn==20.0.4
+* opencv-contrib-python==4.2.0.34
+* opencv-python==4.2.0.34
+* Flask==1.1.2
+* jsonpickle==1.4.1
+* numpy==1.18.4
+* Werkzeug==1.0.1
+* tensorflow==2.0.0rc1
+
+[Heroku link](https://cryptic-mountain-49904.herokuapp.com/)
 
 # [En] Monkeys Species Classifier
 
@@ -22,4 +33,15 @@ The accuracy and the loss can be seen on the images below. The <b> final accurac
 
 Was developed a site to runs the system as can be seen in initial image of README.
 
-The model and the weights are available on github.
+The model and the weights are available on github. All codes are open and the libraries that's used are:
+
+* gunicorn==20.0.4
+* opencv-contrib-python==4.2.0.34
+* opencv-python==4.2.0.34
+* Flask==1.1.2
+* jsonpickle==1.4.1
+* numpy==1.18.4
+* Werkzeug==1.0.1
+* tensorflow==2.0.0rc1
+
+[Heroku link](https://cryptic-mountain-49904.herokuapp.com/)
